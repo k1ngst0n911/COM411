@@ -1,7 +1,15 @@
 ---
 layout: page
-title: "COM411 — Home"
-permalink: /
+title: "COM Anatomy — Series Index"
+permalink: /com/
 ---
 
-Welcome. Start with the **[COM411 — Series Index](/com/)**.
+{% assign parts = site.com | sort: "order" %}
+<ol>
+{% for p in parts %}
+  <li>
+    <a href="{{ p.url }}">{{ p.title }}</a>
+    {% if p.description %} — {{ p.description }}{% endif %}
+  </li>
+{% endfor %}
+</ol>
