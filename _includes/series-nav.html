@@ -1,0 +1,21 @@
+{% assign parts = site.com | sort: "order" %}
+{% assign here = page.path %}
+{% assign i = 0 %}
+{% for p in parts %}
+  {% if p.path == here %}
+    {% assign i = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+<nav class="series-nav" style="margin:1.5rem 0;">
+  <strong>{{ page.series | default: "COM Anatomy" }}</strong>
+  <span style="opacity:.7;"> · Part {{ i | plus: 1 }} of {{ parts.size }}</span>
+  <div style="margin-top:.5rem;">
+    {% if i > 0 %}
+      <a href="{{ parts[i-1].url }}">⟵ Prev</a>
+    {% endif %}
+    {% if i < parts.size | minus: 1 %}
+      <span style="margin:0 .5rem;"></span>
+      <a href="{{ parts[i+1].url }}">Next ⟶</a>
+    {% endif %}
+  </div>
+</nav>
