@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "COM Anatomy — Series Index"
+title: "COM411 - Series Index"
 permalink: /com/
 ---
 
