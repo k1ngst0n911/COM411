@@ -1,5 +1,5 @@
 ---
-layout: page      # or "default"—either works with Midnight
+layout: page
 title: "COM Anatomy — Series Index"
 permalink: /com/
 ---
