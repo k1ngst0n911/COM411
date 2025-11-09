@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "COM Anatomy — Series Index"
 permalink: /com/
 ---
