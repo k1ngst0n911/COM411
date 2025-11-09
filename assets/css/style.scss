@@ -1,0 +1,4 @@
+---
+# This front matter is required so Jekyll processes SCSS -> CSS
+---
+@import "{{ site.theme }}";
