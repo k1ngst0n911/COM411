@@ -4,10 +4,7 @@
 @import "{{ site.theme }}";
 
 /* Compact tiles: short, single-row */
-.tile-grid.compact-tiles .tile *{
-  margin:0 !important;
-}
-
+.tile-grid.compact-tiles .tile-thumb{ display:none !important; }
 
 /* Force a short tile */
 .tile-grid.compact-tiles .tile{
