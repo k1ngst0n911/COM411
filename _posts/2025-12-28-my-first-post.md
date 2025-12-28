@@ -3,7 +3,7 @@ layout: post
 title: "My First Post"
 description: "A tiny test post to prove the tiles page works."
 tags: [test, jekyll]
-image: /assets/img/tiles/test.png
+image: /assets/img/tiles/test.jpg
 ---
 
 Hello, world 👽
