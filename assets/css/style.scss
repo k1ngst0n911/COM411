@@ -4,12 +4,10 @@
 @import "{{ site.theme }}";
 
 /* Compact tiles: short, single-row */
-.tile-grid.compact-tiles{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-  gap:10px;
-  margin-top:12px;
+.tile-grid.compact-tiles .tile *{
+  margin:0 !important;
 }
+
 
 /* Force a short tile */
 .tile-grid.compact-tiles .tile{
